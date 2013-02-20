@@ -57,8 +57,8 @@ namespace PleaseBLL
         {
             if (s.ThreadEmails)
             {
-            Thread t = new Thread(_Send);
-            t.Start(s);
+                Thread t = new Thread(_Send);
+                t.Start(s);
             }
             else
             {
