@@ -4,9 +4,9 @@ using PleaseBLL;
 
 namespace PleaseTest
 {
-	[TestFixture()]
-	public class Test
-	{
+    [TestFixture()]
+    public class Test
+    {
 
         [Test()]
         public void FullTest()
@@ -57,6 +57,6 @@ namespace PleaseTest
             }
         }
 
-	}
+    }
 }
 
