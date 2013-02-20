@@ -50,7 +50,7 @@ namespace PleaseBLL
             SystemSettings s = new SystemSettings();
 
             s.RequireRequestorsToBeSubscribers = true;
-            s.LinkUrl = "http://95.154.250.66/BroadcastWeb/Respond.aspx";
+            s.LinkUrl = "http://localhost/BroadcastWeb/Respond.aspx";
 
             s.ThreadEmails = true;
             s.SMTPServer = "localhost";
@@ -58,19 +58,19 @@ namespace PleaseBLL
             s.SMTPPassword = "";
             s.SMTPSSL = false;
             s.SMTPPort = 25;
-            s.MailFrom = "SERVBroadcast@servssl.org.uk";
+            s.MailFrom = "me@noreply.com";
 
             s.UI_RequestBroadcasted = "Your request has been broadcast to all subscribers of this list.  You will be notified if anyone accepts.";
             s.UI_SubscriptionConfirmation = "Thanks, you have been sent a confirmation email.";
             s.UI_AcceptedRequestThanks = "Thank you!  The list will be notified that the request for cover has been accepted.";
             s.UI_RequestAlreadyFulfilled = "Thank you for your kind offer, however this request for help has already been closed.";
 
-            s.EmailSubject_SubscriberWelcome = "Welcome to the SERV cover broadcast list";
+            s.EmailSubject_SubscriberWelcome = "Welcome to the cover broadcast list";
             s.EmailBody_SubscriberWelcome = "Hi $name,\r\n\r\n" +
-                "Thanks for subscribing to the SERV cover broadcast list.\r\n\r\n" +
+                "Thanks for subscribing to the cover broadcast list.\r\n\r\n" +
                     "Do NOT reply to this email.";
 
-            s.EmailSubject_NewRequest = "SERV Cover Request";
+            s.EmailSubject_NewRequest = "Cover Request";
             s.EmailBody_NewRequest = "Hi $name,\r\n\r\n" +
                 "$requestor needs help with $help.\r\n\r\n" +
                 "To offer your help please click here: \r\n" +
