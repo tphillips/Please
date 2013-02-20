@@ -21,14 +21,14 @@ namespace PleaseTest
             }
         }
 
-		[Test()]
-		public void AddSubscriber()
-		{
+        [Test()]
+        public void AddSubscriber()
+        {
             using (BroadcastSystem s = new BroadcastSystem("./"))
             {
                 s.AddSubscriber(Subscriber.Create("Sam", "sam.smith@gmail.com", "123456789"));
             }
-		}
+        }
 
         [Test()]
         public void SendRequest()
