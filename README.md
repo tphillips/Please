@@ -16,3 +16,7 @@ The system can be used for many purposes, requesting cover for a shift is an ide
 * The system closes the request and notifies all subscribers and the requestor
 
 * Repeat . . .
+
+Todo:
+
+SMS Notifications
