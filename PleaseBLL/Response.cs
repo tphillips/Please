@@ -10,8 +10,8 @@ namespace PleaseBLL
 {
 
     [Serializable]
-	public class Response
-	{
+    public class Response
+    {
 
         public DateTime CreateDate { get; set; }
 
@@ -27,9 +27,9 @@ namespace PleaseBLL
             set;
         }
 
-		public Response()
-		{
-		}
+        public Response()
+        {
+        }
 
         public static Response Create(Subscriber sub, Request req)
         {
@@ -40,6 +40,6 @@ namespace PleaseBLL
             return r;
         }
 
-	}
+    }
 }
 

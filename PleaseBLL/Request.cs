@@ -69,6 +69,6 @@ namespace PleaseBLL
             message = message.Replace("$name", this.FromName).Replace("$acceptor", sub.Name).Replace("$help", this.RequestText);
             new Message(){ Subject = settings.EmailSubject_RequestAcceptedRequestor ,ToEmail = this.FromEmail, Body = message}.Send(settings);
         }
-	}
+    }
 }
 
