@@ -85,7 +85,7 @@ namespace PleaseBLL
 
         public void Save()
         {
-            while (diskLocked) { System.Threading.Thread.Sleep(100); }
+            while (diskLocked) { System.Threading.Thread.Sleep(50); }
             //log.Log("Saving");
             diskLocked = true;
             Serialize(Subscribers, "Subscribers.xml");
@@ -97,7 +97,7 @@ namespace PleaseBLL
 
         public void Load()
         {
-            while (diskLocked) { System.Threading.Thread.Sleep(100); }
+            while (diskLocked) { System.Threading.Thread.Sleep(50); }
             //log.Log("Loading");
             diskLocked = true;
             try 
