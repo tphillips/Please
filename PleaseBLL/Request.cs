@@ -11,8 +11,8 @@ namespace PleaseBLL
 {
 
     [Serializable]
-	public class Request
-	{
+    public class Request
+    {
 
         public DateTime CreateDate { get; set; }
         public string GUID { get; set; }
@@ -36,10 +36,10 @@ namespace PleaseBLL
 
         public DateTime ClosedDate { get; set; }
 
-		public Request()
-		{
+    	public Request()
+    	{
 
-		}
+    	}
 
         public static Request Create(string from, string fromEmail, string fromSms, string request)
         {
@@ -69,6 +69,8 @@ namespace PleaseBLL
             message = message.Replace("$name", this.FromName).Replace("$acceptor", sub.Name).Replace("$help", this.RequestText);
             new Message(){ Subject = settings.EmailSubject_RequestAcceptedRequestor ,ToEmail = this.FromEmail, Body = message}.Send(settings);
         }
+
     }
+
 }
 
