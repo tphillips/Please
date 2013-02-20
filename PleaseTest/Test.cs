@@ -15,9 +15,9 @@ namespace PleaseTest
             {
                 s.Settings.ThreadEmails = false;
                 s.PurgeAll();
-                s.AddSubscriber(Subscriber.Create("Tris", "tris.phillips@gmail.com", "07429386911"));
-                s.AddSubscriber(Subscriber.Create("Tris Work", "tristan@ownersdirect.co.uk", "07429386911"));
-                s.AddRequest(Request.Create("Tris", "tris.phillips@gmail.com", "07429386911", "16th Feb 2013"));
+                s.AddSubscriber(Subscriber.Create("Sam", "sam.smith@gmail.com", "123456789"));
+                s.AddSubscriber(Subscriber.Create("Sam Work", "sam@work.co.uk", "123456789"));
+                s.AddRequest(Request.Create("Sam", "sam.smith@gmail.com", "123456789", "16th Feb 2013"));
             }
         }
 
@@ -26,7 +26,7 @@ namespace PleaseTest
 		{
             using (BroadcastSystem s = new BroadcastSystem("./"))
             {
-                s.AddSubscriber(Subscriber.Create("Tris", "tris.phillips@gmail.com", "07429386911"));
+                s.AddSubscriber(Subscriber.Create("Sam", "sam.smith@gmail.com", "123456789"));
             }
 		}
 
@@ -35,7 +35,7 @@ namespace PleaseTest
         {
             using (BroadcastSystem s = new BroadcastSystem("./"))
             {
-                s.AddRequest(Request.Create("Tris", "tris.phillips@gmail.com", "07429386911", "16th Feb 2013"));
+                s.AddRequest(Request.Create("Sam", "sam.smith@gmail.com", "123456789", "16th Feb 2013"));
             }
         }
 
